@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  body {font-family:;
+  background-color: lightgreen;
+  font-size: 0.8em;}
+
+  form {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+
+  legend {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 30px;
+  }
+
+  fieldset {
+    background-color: green;
+  }
+  th { 
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: left;
+    padding-right: 30px;
+  }
+  
+</style>
+<body>
+  <form>
+    <fieldset>
+      <legend>User Form</legend>
+      <table>
+        <tr>
+          <th><label for="name"><li>First name</li></label></th>
+          <td><input id="name" text="text" required></td>
+        </tr>
+        <tr>
+          <th><label for="password"></label></th>
+          <td><input id="password" type="password" required></td>
+        </tr>
+        <tr>
+      <th><label><li>Gender</li></label></th>
+      <td><label><input name="gender" id="gender-m" type="radio">Male</label>
+      <label>
+        <input name="gender" id="gender-f" type="radio">Female
+      </label>
+    </td>  
+        </tr>
+        <tr>
+          <th> <label for="adress"><li>Adress</li></label></th>
+          <td><textarea name="adress" id="adress"></textarea></td>
+        </tr>
+        <tr>
+          <th><label><li>D.O.B</li></label></th>
+          <td>
+            <select>
+              <option value="jan">Jan</option>
+              <option value="feb">Feb</option>
+              <option value="march">March</option>
+            </select>
+            
+            <select>
+              <option value="day1">1</option>
+              <option value="day2">2</option>
+              <option value="day3">3</option>
+            </select>
+
+            <select>
+              <option value="year20">2020</option>
+              <option value="year21">2021</option>
+              <option value="year22">2022</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <th><label><li>Select games</li></label></th>
+          <td><label for="hockey"><input type="checkbox"> Hockey</label>
+              <label for="football"><input type="checkbox"> Footbal</label>
+              <label for="cricket"><input type="checkbox">Cricket</label>
+              <label for="volleyball"><input type="checkbox">Volleybal</label>
+          </td>
+        </tr>
+
+        <tr>
+          <th><label><li>Marital status</li></label></th>
+          <td><label for="married"><input name="marital" id="married" type="radio">Married</label>
+            <label for="unmarried"><input name="marital" id="unmarried" type="radio">Unmarried</label>
+
+          </td>
+        </tr>
+
+        <tr>
+                <th></th>
+          <td> <input type="submit">
+                <input type="reset">
+
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="agreement"><input id="agreement" type="checkbox">I accept this agreement</label>
+          </td>
+
+        </tr>
+      </table>
+    </fieldset>
+  </form>
+</body>
+</html>
